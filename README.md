@@ -25,4 +25,4 @@ MIT License. See LICENSE.md for details.
 
 ## Copyright
 
-Copyright (c) 2015 Jeffrey Ruder
+Copyright (c) 2016 Jeffrey Ruder
