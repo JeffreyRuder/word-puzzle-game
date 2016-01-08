@@ -20,4 +20,12 @@ public class IntegrationTest extends FluentTest {
       goTo("http://localhost:4567");
       assertThat(pageSource()).contains("Word Puzzle Game");
   }
+
+  @Test
+  public void resultsTest_shortPhraseWithCaseAndPunctuation_ReturnsDashed() {
+      goTo("http://localhost:4567");
+      fill("#user-entry").with("Use the Force, Luke!");
+      submit(".btn");
+      assertThat(pageSource()).contains("-s- th- F-rc-, L-k-!");
+  }
 }
