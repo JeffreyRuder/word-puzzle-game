@@ -15,4 +15,10 @@ public class LetterReplacerTest {
       String expectedResult = "b-l--v-";
       assertEquals(expectedResult, vowelReplacer.letterReplace("believe"));
   }
+
+  @Test
+  public void letterReplace_replaceVowelsWithDashes_shortPhraseWithDashes() {
+      String expectedResult = "-nch-r th- sh-p";
+      assertEquals(expectedResult, vowelReplacer.letterReplace("anchor the ship"));
+  }
  }
