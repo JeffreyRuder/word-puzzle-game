@@ -21,4 +21,10 @@ public class LetterReplacerTest {
       String expectedResult = "-nch-r th- sh-p";
       assertEquals(expectedResult, vowelReplacer.letterReplace("anchor the ship"));
   }
+
+  @Test
+  public void letterReplace_replaceVowelsWithDashes_shortPhraseWithDashesAndCase() {
+      String expectedResult = "-P-d PL-YL-ST R-CKS";
+      assertEquals(expectedResult, vowelReplacer.letterReplace("iPod PLAYLIST ROCKS"));
+  }
  }
