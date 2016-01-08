@@ -1,5 +1,21 @@
+h1 {
+    font-family: 'Lato';
+}
+
+.container {
+    background-color: #D5E7ED;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .original-text, .dashed-text {
     font-size: 2em;
-    font-family: Helvetica sans-serif;
+    font-family: 'PT Mono', Lucida, sans-serif;
+    margin-bottom: 15px;
+}
+
+.form-control {
     margin-bottom: 15px;
 }
