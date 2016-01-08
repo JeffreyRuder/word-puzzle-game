@@ -25,6 +25,7 @@ public class App {
             String userInputString = request.queryParams("user-entry").trim();
             String outputString = myReplacer.letterReplace(userInputString);
 
+            model.put("user-input-string", userInputString);
             model.put("output-string", outputString);
 
             return new ModelAndView(model, layout);

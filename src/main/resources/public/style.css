@@ -1,5 +1,5 @@
-.puzzle-text {
+.original-text, .dashed-text {
     font-size: 2em;
     font-family: Helvetica sans-serif;
-    margin-bottom: 1em;
+    margin-bottom: 15px;
 }

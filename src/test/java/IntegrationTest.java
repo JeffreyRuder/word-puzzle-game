@@ -43,4 +43,6 @@ public class IntegrationTest extends FluentTest {
       submit(".btn");
       assertThat(pageSource()).contains("a href=\"/\"");
   }
+
+  // Need an integration test for the JavaScript in result.vtl, but not sure how to get webDriver to use JavaScript. Even when JavaScript is enabled when the webDriver is initialized, the webDriver cannot seem to use the event listener in the script.js file.
 }

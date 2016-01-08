@@ -1,3 +1,12 @@
 <h1>Solve the Puzzle</h1>
-<div class="puzzle-text">$output-string </div>
-<a href='/' class="btn btn-default" role="button">Play Again</a>
+<div class="puzzle-text">
+    <div class="dashed-text">$output-string </div>
+    <div id="original-text" class="original-text hidden">$user-input-string </div>
+    <form>
+        <div class="form-group">
+            <button type="submit" id="reveal" class="btn btn-default">Reveal Original</button>
+            <a href='/' id="play-again" class="btn btn-default" role="button">Play Again</a>
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
