@@ -1,8 +1,8 @@
 public class LetterReplacer {
 
     public String letterReplace(String inputString) {
-        String outputString = inputString.replaceAll("(?i)[aeiou]", "-");
-        return outputString;
+        String vowelsReplaced = inputString.replaceAll("(?i)[aeiou]", "-");
+        return vowelsReplaced;
     }
 
 }
