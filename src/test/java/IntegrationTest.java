@@ -28,4 +28,12 @@ public class IntegrationTest extends FluentTest {
       submit(".btn");
       assertThat(pageSource()).contains("-s- th- F-rc-, L-k-!");
   }
+
+  @Test
+  public void returnTest_resultsPage_containsLinkToIndex() {
+      goTo("http://localhost:4567");
+      fill("#user-entry").with("Use the Force, Luke!");
+      submit(".btn");
+      assertThat(pageSource()).contains("a href=\"/\"");
+  }
 }
