@@ -1,26 +1,28 @@
-# Java/Spark/Velocity File Structure Template
+# GuessPhrase
 
+#### A game for two players
 #### January 5, 2016
 
-#### By Midori Bowen and Jeffrey Ruder
+#### By Jeffrey Ruder
 
 ## Description
 
-This is a template file structure for use in Epicodus Java/Spark/Velocity projects.
+The first player enters a word or phrase and submits it in a HTML form. The app replaces all vowels in the word or phrase with dashes and displays it on a new page. Then, a second player can try to guess the word or phrase. When the second player is done guessing, they can press a button to reveal the original phrase.
 
-## How To Use
+## Setup Instructions
 
-* Make a directory for your project and initialize a git repository.
-* Pull this file structure template from GitHub: `git pull https://github.com/JeffreyRuder/java-spark-template.git`
-
-OR:
-
-* Fork this repository from GitHub and rename it
-
-## Please Make This Better
-
-Please fork this repository and send a pull request if something in here could be better.
+* Clone this repository.
+* Make sure you have Gradle and Java installed.
+* Run the following command in your terminal: `gradle run`
 
 ## Technologies Used
 
 Java, Spark, JUnit, FluentLenium, Velocity, Bootstrap
+
+## License
+
+MIT License. See LICENSE.md for details.
+
+## Copyright
+
+Copyright (c) 2015 Jeffrey Ruder
