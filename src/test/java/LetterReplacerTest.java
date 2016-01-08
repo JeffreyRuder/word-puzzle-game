@@ -27,4 +27,10 @@ public class LetterReplacerTest {
       String expectedResult = "-P-d PL-YL-ST R-CKS";
       assertEquals(expectedResult, vowelReplacer.letterReplace("iPod PLAYLIST ROCKS"));
   }
+
+  @Test
+  public void letterReplace_replaceVowelsWithDashes_preservesPunctuation() {
+      String expectedResult = "-s- th- F-rc-, L-k-!";
+      assertEquals(expectedResult, vowelReplacer.letterReplace("Use the Force, Luke!"));
+  }
  }
