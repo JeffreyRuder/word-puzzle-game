@@ -33,4 +33,10 @@ public class LetterReplacerTest {
       String expectedResult = "-s- th- F-rc-, L-k-!";
       assertEquals(expectedResult, vowelReplacer.letterReplace("Use the Force, Luke!"));
   }
+
+  @Test
+  public void letterReplace_replaceVowelsWithDashes_worksForLongString() {
+      String expectedResult = "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt";
+      assertEquals(expectedResult, vowelReplacer.letterReplace("Believe you can and you're halfway there. Theodore Roosevelt"));
+  }
  }
