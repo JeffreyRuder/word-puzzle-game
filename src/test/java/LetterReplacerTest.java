@@ -13,6 +13,6 @@ public class LetterReplacerTest {
   @Test
   public void letterReplace_replaceVowelsWithDashes_shortWordWithDashes() {
       String expectedResult = "b-l--v-";
-      assertEquals(expectedResult, "believe");
+      assertEquals(expectedResult, vowelReplacer.letterReplace("believe"));
   }
  }
