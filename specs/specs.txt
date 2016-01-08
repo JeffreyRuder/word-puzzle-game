@@ -20,5 +20,10 @@
 
 5.
     Behavior: Correctly replaces vowels with dashes in a longer string
-    Input: Believe you can and you're halfway there. Theodore Roosevelt
-    Output: B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt
+    Input: "Believe you can and you're halfway there. Theodore Roosevelt"
+    Output: "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt"
+
+6.
+    Behavior: Removes leading and trailing whitespace from input String
+    Input: "    Why does everyone want to go back to Jakku!    "
+    Output: "Why d--s -v-ry-n- w-nt t- g- b-ck t- J-kk-!"
