@@ -21,6 +21,13 @@ public class IntegrationTest extends FluentTest {
       assertThat(pageSource()).contains("Word Puzzle Game");
   }
 
+  public void indexTest_indexPageFormValidation_PreventsNumerals() {
+      goTo("http://localhost:4567");
+      fill("#user-entry").with("TROLOLOL101eleven11");
+      submit(".btn");
+      assertThat(pageSource()).contains("Word Puzzle Game");
+  }
+
   @Test
   public void resultsTest_shortPhraseWithCaseAndPunctuation_ReturnsDashed() {
       goTo("http://localhost:4567");
