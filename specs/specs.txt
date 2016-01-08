@@ -1,1 +1,24 @@
-## For plain English specs
+1.
+    Behavior: Replaces vowels in a single word with dashes
+    Input: "believe"
+    Output: "b-l--v-"
+
+2.
+    Behavior: Replaces vowels in short phrase with dashes
+    Input: "anchor the ship"
+    Output: "-nch-r th- sh-p"
+
+3.
+    Behavior: Replaces vowels with dashes and preserves case
+    Input: "iPod PLAYLIST ROCKS"
+    Output: "-P-d PL-YL-ST R-CKS"
+
+4.
+    Behavior: Replaces vowels with dashes and preserves punctuation
+    Input: "Use the Force, Luke!"
+    Output: "-s- th- F-rc-, L-k-!"
+
+5.
+    Behavior: Correctly replaces vowels with dashes in a longer string
+    Input: Believe you can and you're halfway there. Theodore Roosevelt
+    Output: B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt
