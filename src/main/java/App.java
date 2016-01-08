@@ -22,8 +22,8 @@ public class App {
             model.put("template", "templates/result.vtl");
 
             LetterReplacer myReplacer = new LetterReplacer();
-            String userInputString = request.queryParams("user-entry");
-            String outputString = myReplacer.letterReplace(request.queryParams)
+            String userInputString = request.queryParams("user-entry").trim();
+            String outputString = myReplacer.letterReplace(userInputString);
 
             model.put("output-string", outputString);
 
