@@ -39,4 +39,10 @@ public class LetterReplacerTest {
       String expectedResult = "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt";
       assertEquals(expectedResult, vowelReplacer.letterReplace("Believe you can and you're halfway there. Theodore Roosevelt"));
   }
+
+  @Test
+  public void letterReplace_replaceVowelsWithDashes_cleansWhitespace() {
+      String expectedResult = "Why d--s -v-ry-n- w-nt t- g- b-ck t- J-kk-!";
+      assertEquals(expectedResult, vowelReplacer.letterReplace("    Why does everyone want to go back to Jakku!    "));
+  }
  }
