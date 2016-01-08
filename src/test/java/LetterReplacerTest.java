@@ -42,7 +42,7 @@ public class LetterReplacerTest {
 
   @Test
   public void letterReplace_replaceVowelsWithDashes_cleansWhitespace() {
-      String expectedResult = "Why d--s -v-ry-n- w-nt t- g- b-ck t- J-kk-!";
-      assertEquals(expectedResult, vowelReplacer.letterReplace("    Why does everyone want to go back to Jakku!    "));
+      String expectedResult = "Why d--s -v-ry-n- w-nt t- g- b-ck t- J-kk-?!";
+      assertEquals(expectedResult, vowelReplacer.letterReplace("    Why does everyone want to go back to Jakku?!    "));
   }
  }
